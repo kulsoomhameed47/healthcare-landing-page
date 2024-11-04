@@ -1,0 +1,85 @@
+body{
+    background-color: antiquewhite;
+}
+.Container-form {
+    background-color: #f8f9fa;
+    padding: 20px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px; 
+    margin: 30px auto;
+}
+
+.Container-form h2 {
+    text-align: center;
+    margin-bottom: 15px; 
+}
+
+.input-box {
+    margin-bottom: 10px; 
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 8px; 
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.input-box input:focus {
+    border-color: #80bdff;
+    outline: none;
+}
+
+.gender-title {
+    font-weight: bold;
+    margin-top: 15px; 
+}
+
+.gender-category {
+    margin-bottom: 10px;
+}
+
+.gender-category input {
+    margin-right: 5px;
+}
+
+.alert {
+    margin-top: 15px; 
+    font-size: 0.9em;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: rgb(27, 125, 190);
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(20, 100, 160);
+}
+
+.container.mt-5 {
+    margin-top: 40px;
+}
+
+.container.mt-5 h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealthFirst - Quality Healthcare Services</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #046fdb !important;">
+  <a class="navbar-brand" href="#" style="color:white;">Medical Healthcare</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#resourcesModal">Resources</a></li>
+        <form class="d-flex">
+          <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero (Home) Section with Slogan -->
+  <section id="home" class="text-center text-white" style="background-color: #0073e6;">
+    <div class="container">
+      <h1 class="display-4">Your Health, Our Priority</h1>
+      <p class="lead">Providing comprehensive healthcare services to improve your quality of life.</p>
+    </div>
+  </section>
+  
+
+ <!-- Resources Modal -->
+<div class="modal fade" id="resourcesModal" tabindex="-1" aria-labelledby="resourcesModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="resourcesModalLabel">Healthcare Resources</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="card-deck">
+          <!-- Resource 1: Health and Wellness Guide -->
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Health & Wellness Guide <span class="badge badge-info">PDF</span></h5>
+              <p class="card-text">A comprehensive guide to maintaining overall health and wellness.</p>
+              <button class="btn btn-primary">Download</button>
+            </div>
+          </div>
+          <!-- Resource 2: First Aid Procedures -->
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">First Aid Procedures <span class="badge badge-info">Video</span></h5>
+              <p class="card-text">Video tutorials on basic first aid procedures and emergency care.</p>
+              <button class="btn btn-primary">Watch Now</button>
+            </div>
+          </div>
+          <!-- Resource 3: Nutrition and Diet Quiz -->
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Nutrition & Diet Quiz <span class="badge badge-info">Quiz</span></h5>
+              <p class="card-text">Test your knowledge on nutrition and healthy eating habits.</p>
+              <button class="btn btn-primary">Start Quiz</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="Container-form">
+  <form name="form" id="registrationForm" onsubmit="redirectToIndex(); return false;">
+      <h2>Register Yourself</h2>
+      <div class="content">
+          <div class="input-box">
+              <label for="name">Full Name</label>
+              <input type="text" placeholder="Enter full name" name="name" required>
+          </div>
+          <div class="input-box">
+              <label for="email">Email</label>
+              <input type="email" placeholder="Enter your valid email address" name="email" required>
+          </div>
+          <div class="input-box">
+              <label for="password">Password</label>
+              <input type="password" placeholder="Enter new password" name="password" required>
+          </div>
+          <div class="input-box">
+              <label for="confirm-password">Confirm Password</label>
+              <input type="password" placeholder="Confirm your password" name="confirmPassword" required>
+          </div>
+          <span class="gender-title">Gender</span>
+          <div class="gender-category">
+              <input type="radio" name="gender" id="male" required>
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="female" required>
+              <label for="female">Female</label>
+              <input type="radio" name="gender" id="other" required>
+              <label for="other">Other</label>
+          </div>
+      </div>
+      <div class="alert">
+          <p>By clicking Sign Up, you agree to our <a href="#">Terms, </a><a href="#">Privacy Policy</a> and <a href="#">Cookies Policy.</a></p>
+      </div>
+      <button type="submit" class="btn">Sign Up</button>
+  </form>
+</div>
+   
+
+</div>   
+<!-- About Us Section -->
+<section id="about" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">About Us</h2>
+    <p class="text-center">
+      We are a trusted healthcare organization dedicated to offering top-notch medical services. Our team of professionals is committed to providing you with compassionate and quality care.
+    </p>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <p class="text-center">Phone: (123) 456-7890</p>
+    <p class="text-center">Email: info@healthcare.com</p>
+    <p class="text-center">Address: 123 Health St, Karachi City</p>
+  </div>
+</section>
+  
+<!-- Feedback Form -->
+  <div class="Container-form">
+    <h2>Feedback</h2>
+    <form>
+      <div class="form-group">
+        <label for="feedback">Your Feedback</label>
+        <textarea class="form-control" id="feedback" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn" >Submit</button>
+    </form>
+  </div>
+  
+<!-- Services Section -->
+<section id="services" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Services</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <h4>General Checkup</h4>
+        <p>Routine health assessments to keep you at your best.</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Pediatrics</h4>
+        <p>Comprehensive care for infants, children, and adolescents.</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Emergency Care</h4>
+        <p>Available 24/7 to provide immediate medical attention.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    document.querySelector("#registrationForm").addEventListener("submit", function(event) {
+        let isValid = true;
+
+        const nameInput = document.querySelector('input[name="name"]');
+        const nameValue = nameInput.value.trim();
+        const nameRegex = /^[A-Za-z\s]{3,}$/;
+        if (!nameRegex.test(nameValue)) {
+            alert("Name must be at least 3 characters long and contain only letters and spaces.");
+            isValid = false;
+            nameInput.focus();
+        }
+
+        const emailInput = document.querySelector('input[name="email"]');
+        const emailValue = emailInput.value.trim();
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (!emailRegex.test(emailValue)) {
+            alert("Please enter a valid email address.");
+            isValid = false;
+            emailInput.focus();
+        }
+
+        const passwordInput = document.querySelector('input[name="password"]');
+        const passwordValue = passwordInput.value;
+        const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+        if (!passwordRegex.test(passwordValue)) {
+            alert("Password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, one digit, and one special character.");
+            isValid = false;
+            passwordInput.focus();
+        }
+
+        const confirmPasswordInput = document.querySelector('input[name="confirmPassword"]');
+        const confirmPasswordValue = confirmPasswordInput.value;
+        if (passwordValue !== confirmPasswordValue) {
+            alert("Passwords do not match.");
+            isValid = false;
+            confirmPasswordInput.focus();
+        }
+
+        if (!isValid) {
+            event.preventDefault();
+        } else {
+            alert("Form submitted successfully!");
+        }
+    });
+</script>
+<script>
+  function redirectToIndex() {
+      window.location.href = './index.html';
+  }
+  </script>
+
+</body>
+
+</html>
